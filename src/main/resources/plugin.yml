@@ -1,0 +1,4 @@
+name: Picture Login2
+version: '1.0-SNAPSHOT'
+main: creeperdev.pictureLogin2.PictureLogin2
+api-version: '1.20'
