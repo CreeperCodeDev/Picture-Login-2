@@ -22,18 +22,18 @@ public class PictureLogin2 extends JavaPlugin implements Listener {
     private OkHttpClient httpClient;
     private FileConfiguration config;
 
-    @Override
-    public void onEnable() {
-        // 初始化配置
-        saveDefaultConfig();
-        config = getConfig();
+@Override
+public void onEnable() {
+    // Ensure config exists, but don't throw an error if it doesn't
+    saveDefaultConfig();
+    reloadConfig();
 
         // 初始化HTTP客戶端
         httpClient = new OkHttpClient();
 
         // 註冊事件監聽器
         Bukkit.getPluginManager().registerEvents(this, this);
-        getLogger().info("JoinPhoto插件已啟動!");
+        getLogger().info("pictureLogin2插件已啟動!");
     }
 
     @EventHandler
@@ -96,6 +96,6 @@ public class PictureLogin2 extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        getLogger().info("JoinPhoto插件已關閉!");
+        getLogger().info("pictureLogin2插件已關閉!");
     }
 }
