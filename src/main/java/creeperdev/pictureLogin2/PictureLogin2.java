@@ -16,7 +16,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import java.io.IOException;
 import java.util.Base64;
 
-public class Picturelogin2 extends JavaPlugin implements Listener {
+public class PictureLogin2 extends JavaPlugin implements Listener {
 
     private static final String MINECRAFT_HEAD_API = "https://mc-heads.net/avatar/";
     private OkHttpClient httpClient;
