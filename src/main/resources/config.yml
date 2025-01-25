@@ -1,0 +1,4 @@
+# Picture Login2 Plugin Configuration
+avatar-size: 64
+display-method: chat
+enable-hover: true
